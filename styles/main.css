@@ -1,33 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
 
+html {
+  font-family: 'Barlow', sans-serif;
+}
+
 
 * {
-  cursor: crosshair;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  &::before, &::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+  font-family: 'Barlow', sans-serif;
+  list-style: none;
+  padding: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+
 }
 
-nav {
-  cursor: crosshair;
+.nav {
+  font-family: 'Barlow', sans-serif;
   display: inline-block;
-  line-height: normal;
-  padding: .5rem 1rem;
-  margin: 0;
-  height: auto;
+  line-height: inherit;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  height: inherit;
   border: 1px solid;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  color: #555;
-  background-color: rgba(0, 0, 0, 0);
-
+  vertical-align: super;
 }
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+}
+
+p{
+  margin: 10px;
+  padding:20px;
+  font-size: 15px;
+  display: block;
+  float: inherit;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  margin: 20px;
+  padding:20px;
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+
 
 #portfolio {
-    margin: 1rem 0;
+    margin: 1rem 3rem;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -39,55 +62,6 @@ nav {
     column-width: 33.33333333333333%;
 }
 
-body {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: $gray;
-  background: $white;
-  text-rendering: optimizeLegibility;
-  max-width: 900px;
- float: none;
- margin: auto;
-}
-
-h1 p {
-  font-family: 'Barlow', sans-serif;
-}
-
-.tile {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-
-}
-.tile:hover {
-
-}
-
-.scale-anm {
-  transform: scale(1);
-}
-
-
-p{
-  padding:10px;
-  border-bottom: 1px #ccc dotted;
-  text-decoration: none;
-  font-family: lato;
-  text-transform:uppercase;
-  font-size: 12px;
-  color: #333;
-  display:block;
-  float:left;
-}
-
-p:hover {
-  cursor:pointer;
-  background: #333;
-  color:#eee; }
-
 .tile img {
     max-width: 100%;
     width: 100%;
@@ -96,60 +70,49 @@ p:hover {
 
 }
 
-.btn {
-    font-family: Lato;
-    font-size: 1rem;
-    font-weight: normal;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    line-height: normal;
-    padding: .5rem 1rem;
-    margin: 0;
-    height: auto;
-    border: 1px solid;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    color: #555;
-    background-color: rgba(0, 0, 0, 0);
-}
-
 .btn:hover {
-  text-decoration: none;
+  background: #333;
+  color:#eee; }
 }
 
-.btn:focus {
-  outline: none;
-  border-color: var(--darken-2);
-  box-shadow: 0 0 0 3px var(--darken-3);
+.btn {
+    font-size: 2rem;
+    font-weight: normal;
+    display: inline-block;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    height: auto;
+    border: .5px;
+    background-color: white;
 }
 
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
 
-
-
-
-footer.mdl-mini-footer {
-   list-style: none;
-   bottom: 0;
-   padding: 0.5rem;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
+.footer li {
+  align-content: center;
+  display: inline-flex;
+  margin: 8px;
+  padding: 6px;
+  text-align: center;
 
 }
 
-footer.mdl-mini-footer > ul {
-   margin: 10px;
-   font-size: 2rem;
-   columns: 5;
-   list-style: none;
-   display: run-in;
-   color: red;
- }
+.center {
+  display: inline-block;
+  margin: 10px;
+  padding: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center a {
+    margin: 1 2px;
+}
+
+.footer {
+  text-align: center;
+  margin: 10px;
+}
 
 
  @media screen and (max-width: 1024px) {
