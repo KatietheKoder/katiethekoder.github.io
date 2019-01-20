@@ -3,7 +3,7 @@
   "description": "NES.css is NES-style CSS Framework.",
   "scripts": {
     "watch": "npm run build:sass -- --watch",
-    "//": "Build task",
+    "//": "Misc",
     "build": "run-p build:core build:main",
     "build:core": "npm run build:sass-core && npm run build:autoprefix-core && npm run build:cleancss-core",
     "build:main": "npm run build:sass && npm run build:autoprefix && npm run build:cleancss",
@@ -14,11 +14,9 @@
     "build:sass": "node-sass --output-style expanded --source-map true --functions scripts/scssFunctions.js scss/nes.scss css/nes.css",
     "build:autoprefix": "postcss --use autoprefixer --map false --output css/nes.css css/nes.css",
     "build:cleancss": "cleancss -o css/nes.min.css css/nes.css",
-    "//": "For nes-core.css",
     "build:sass-core": "node-sass --output-style expanded --source-map true --functions scripts/scssFunctions.js scss/nes-core.scss css/nes-core.css",
     "build:autoprefix-core": "postcss --use autoprefixer --map false --output css/nes-core.css css/nes-core.css",
     "build:cleancss-core": "cleancss -o css/nes-core.min.css css/nes-core.css",
-    "//": "Misc",
     "stylelint": "stylelint scss/**/*.scss",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
@@ -62,7 +60,6 @@
     "eslint-plugin-import": "^2.14.0",
     "file-loader": "^2.0.0",
     "git-rev-sync": "^1.12.0",
-    "husky": "^1.0.0",
     "lint-staged": "^7.3.0",
     "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.5",
@@ -154,5 +151,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "dependencies": {}
 }
