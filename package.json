@@ -152,5 +152,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.6"
+  }
 }
