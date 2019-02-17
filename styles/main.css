@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
 
 html {
+  
 
 }
 
@@ -107,6 +108,7 @@ h3 {
 .btn {
     font-weight: normal;
     display: inline-block;
+    border: solid white 2px;
 
 }
 
